@@ -8,7 +8,7 @@ public class Endpoint {
 
     @GetMapping
     public String versao(){
-    	String strVersao = "Versão do Java é: " + System.getProperty("java.runtime.version");
+    	String strVersao = "Sua versão do Java é: ".concat(System.getProperty("java.runtime.version"));
         return strVersao;
     }
 }
